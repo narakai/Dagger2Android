@@ -20,7 +20,7 @@ public class MainActivityModule {
 
     @Provides
     static Teacher provideTeacher() {
-        return new Teacher();
+        return new Teacher("Jim");
     }
 
     @Provides

@@ -53,7 +53,7 @@ public class MainActivity extends BaseActivity implements MainContract.View {
         tvContent.setText(className + "\n" +
                 s2.toString() + "\n" +
                 s1.toString() + "\n" +
-                t1.toString());
+                t1.toString() + " " + t1.getName());
 
     }
 
