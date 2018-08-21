@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import clem.app.dagger2_android.bean.Student;
+import clem.app.dagger2_android.bean.Teacher;
 import clem.app.dagger2_android.di.scope.ActivityScope;
 import clem.app.dagger2_android.mvp.activity.MainActivity;
 import dagger.Module;
@@ -15,6 +16,11 @@ public class MainActivityModule {
     @Provides
     static String provideName() {
         return MainActivity.class.getName();
+    }
+
+    @Provides
+    static Teacher provideTeacher() {
+        return new Teacher();
     }
 
     @Provides
